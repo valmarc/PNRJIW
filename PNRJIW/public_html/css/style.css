@@ -29,8 +29,7 @@ nav{
     background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
     background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
     overflow:hidden;
-    padding:10px;
-    padding-left: 100px;
+    padding:10px;   
   /*  width:725px;*/
     
 }
@@ -38,7 +37,7 @@ nav{
 nav ul{
     list-style:none;
     margin:0 10px 0 10px;
-    padding:0;
+    padding:0;    
 }
 
 nav ul li{
@@ -86,6 +85,22 @@ nav ul li a{
 nav ul li a:hover {
     color:#000;
 }
+
+ .ulBoton{
+            float: left;
+            list-style-type: none;
+            padding: 0; 
+            /* AÑADIMOS */
+            position: relative; 
+            left: 50%;
+        }
+ .liBotton{
+            float: left;
+            /* AÑADIMOS */
+            position: relative; 
+            right: 50%;
+        }
+
 /*Clases
 .MensajeEmergente{
     display:none;

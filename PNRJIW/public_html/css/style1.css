@@ -50,5 +50,19 @@ and open the template in the editor.
             display:block;
         }
         
-        
-      
+        #formContacto{
+            margin-left:90px;
+            border: medium none;
+            font-size: 13px;
+            padding: 14px 18px;
+            border-radius: 20px;
+            color: #333333;
+            font-family: "ArimoRegular";
+        }
+        .cuadroTexto{            
+            background-color: #eeeeee;
+            border: medium none;
+            box-shadow: 0 0 0 #aaaaaa inset, 2px 2px 1px #aaaaaa;
+            transition: all 0.3s linear 0s;
+           
+        }      

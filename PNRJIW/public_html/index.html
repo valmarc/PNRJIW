@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <header>            
@@ -43,12 +44,10 @@ and open the template in the editor.
                     <li class="num4 img slide"> <img src="slider_menu_pricipal_files/csss_images1/slide_menu_terraza.jpg" alt="slide_menu_terraza" title="slide_menu_terraza"></li>
                     <li class="num5 img slide"> <img src="slider_menu_pricipal_files/csss_images1/slider_menu_artesanos.jpg" alt="slider_menu_artesanos" title="slider_menu_artesanos"></li>
                     <li class="num6 img slide"> <img src="slider_menu_pricipal_files/csss_images1/slider_menu_contacto.jpg" alt="slider_menu_contacto" title="slider_menu_contacto"></li>
-                </ul><div class="cs_engine"><a href="http://cssslider.com">carousel jquery</a> by cssSlider.com v2.1</div>
-
-
-
+                </ul>
                 <div class="cs_bullets">
-                    <label class="num0" for="cs_slide1_0"> <span class="cs_point"></span>
+                    <label class="num0" for="cs_slide1_0"> 
+                       <span class="cs_point"></span>                     
                         <span class="cs_thumb"><img src="slider_menu_pricipal_files/csss_tooltips1/slide_menu_home.jpg" alt="slide_menu_home" title="slide_menu_home"></span></label>
                     <label class="num1" for="cs_slide1_1"> <span class="cs_point"></span>
                         <span class="cs_thumb"><img src="slider_menu_pricipal_files/csss_tooltips1/slide_menu_comedor.jpg" alt="slide_menu_comedor" title="slide_menu_comedor"></span></label>
@@ -60,14 +59,30 @@ and open the template in the editor.
                         <span class="cs_thumb"><img src="slider_menu_pricipal_files/csss_tooltips1/slide_menu_terraza.jpg" alt="slide_menu_terraza" title="slide_menu_terraza"></span></label>
                     <label class="num5" for="cs_slide1_5"> <span class="cs_point"></span>
                         <span class="cs_thumb"><img src="slider_menu_pricipal_files/csss_tooltips1/slider_menu_artesanos.jpg" alt="slider_menu_artesanos" title="slider_menu_artesanos"></span></label>
-                    <label class="num6" for="cs_slide1_6"> <span class="cs_point"></span>
+                    <label class="num6" for="cs_slide1_6"> 
+                       <span class="cs_point"></span>                        
                         <span class="cs_thumb"><img src="slider_menu_pricipal_files/csss_tooltips1/slider_menu_contacto.jpg" alt="slider_menu_contacto" title="slider_menu_contacto"></span></label>
                 </div>
             </div>
             <!-- End cssSlider.com -->
         </header>
-        <NAV>
-            
+        <NAV>            
+            <ul style="text-align: center;">
+                <li><a title="Opcion 1" href="#">Inicio</a></li>
+                <li><a title="Opcion 2" href="#">Comedor</a></li>
+                <li><a title="Opcion 3" href="#">Dormitorio</a></li>
+                <li><a title="Opcion 4" href="#">Sala</a></li>
+                <li><a title="Opcion 5" href="#">Terraza</a></li>
+                <li><a title="Opcion 6" href="#">Somos Artesanos</a></li>
+                <li><a title="Opcion 7" href="#">Contacto</a></li>
+            </ul>
+<!--            <img id="opcion1" class="imagenMenu" onclick="MostrarDiv('divContacto');" src="img/btn/boton_contacto1.fw.png" alt="Contacto" onMouseOver="cambiarOP1();" onMouseOut="volverOP1();">
+            <img id="opcion2" onclick="MostrarDiv('divTerraza');" src="img/btn/boton_terraza1.fw.png" alt="Terraza" onMouseOver="cambiarOP2();" onMouseOut="volverOP2();">
+            <img id="opcion3" onclick="MostrarDiv('divCocina');" src="img/btn/boton_cocina1.fw.png" alt="Cocina" onMouseOver="cambiarOP3();" onMouseOut="volverOP3();">
+            <img id="opcion4" onclick="MostrarDiv('divComedor');" src="img/btn/boton_comedor1.fw.png" alt="Comedor" onMouseOver="cambiarOP4();" onMouseOut="volverOP4();">
+            <img id="opcion5" onclick="MostrarDiv('divDormitorio');" src="img/btn/boton_dormitorio1.fw.png" alt="Dormitorio" onMouseOver="cambiarOP5();" onMouseOut="volverOP5();">
+            <img id="opcion6" onclick="MostrarDiv('divArtesanos');" src="img/btn/boton_artesanos1.fw.png" alt="Nuestros Artesanos" onMouseOver="cambiarOP6();" onMouseOut="volverOP6();">
+            <img id="opcion7" onclick="MostrarDiv('Divsala');" src="img/btn/boton_sala1.fw.png" alt="Sala" onMouseOver="cambiarOP7();" onMouseOut="volverOP7();">-->
         </NAV>
         <article id="home" style="margin-left: 100px;margin-top: 50px;">
             <iframe src="slide_index_1.html" style="width:470px;height:314px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;" marginheight="0" marginwidth="0"></iframe>

@@ -8,15 +8,28 @@
     src: url(ufonts.com_century-gothic.ttf);
 }
 
-/*Clases*/
+footer{
+    text-align:center;
+	font-size:14px;	 
+        color:#ccc;
+	background-color:#848484;	 
+	margin-top:15px;	
+        font-family:Century Gothic;    
+}
+
+
+
+
+
+/*Clases
 .MensajeEmergente{
     display:none;
 }
 
-/*Etiquetas Individuales*/
+/*Etiquetas Individuales
 #main {
     background-image: url(../img/fondo/fondo_madera3.jpg);
-    /*background-color: #FFFAFA;*/
+    /*background-color: #FFFAFA;
     position: static;
 }
 
@@ -84,7 +97,7 @@
  margin-right: 470px;
  margin-top:40px;
  margin-bottom: 40px;
-/* background-color: white;*/
+/* background-color: white;
  font-family: Century Gothic;
  font-size:12px;	 
  background-image: url(../img/fondo/globo.fw.png);
@@ -94,4 +107,4 @@
     	font-size:22px;	 
         font-weight:bold;
         text-align: center;       
-}
+} */

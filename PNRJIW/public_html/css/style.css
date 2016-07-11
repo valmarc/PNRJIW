@@ -9,9 +9,7 @@
 }
 
 #home{
-    padding-top: 40px;
-    padding-left:30px;
-    padding-right: 30px;
+    padding-top: 40px;    
     text-align: center; 
     background-color: #000000; 
     color:#ccc;
@@ -20,12 +18,13 @@
 }
 
 footer{
+    border: 1px solid #ccc;
     text-align:center;
 	font-size:14px;	 
         color:#ccc;
 	/*background-color:#848484;*/
         background-color: #000000;
-        padding-top: 15px;
+        padding-top: 40px;
         font-family:Century Gothic;    
 }
 

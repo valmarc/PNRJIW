@@ -69,13 +69,13 @@ and open the template in the editor.
         </header>
         <NAV >
             <ul class="ulBoton" >
-                <li class="liBotton"><a title="Opcion 1" href="#">Inicio</a></li>
-                <li class="liBotton"><a title="Opcion 2" href="#">Comedor</a></li>
-                <li class="liBotton"><a title="Opcion 3" href="#">Dormitorio</a></li>
-                <li class="liBotton"><a title="Opcion 4" href="#">Sala</a></li>
-                <li class="liBotton"><a title="Opcion 5" href="#">Terraza</a></li>
-                <li class="liBotton"><a title="Opcion 6" href="#">Somos Artesanos</a></li>
-                <li class="liBotton"><a title="Opcion 7" href="#">Contacto</a></li>
+                <li class="liBotton"><a title="Opcion 1" href="#" onclick="MostrarDiv('divhome');">Inicio</a></li>
+                <li class="liBotton"><a title="Opcion 2" href="#" onclick="MostrarDiv('divComedor');">Comedor</a></li>
+                <li class="liBotton"><a title="Opcion 3" href="#" onclick="MostrarDiv('divDormitorio');">Dormitorio</a></li>
+                <li class="liBotton"><a title="Opcion 4" href="#" onclick="MostrarDiv('divSala');">Sala</a></li>
+                <li class="liBotton"><a title="Opcion 5" href="#" onclick="MostrarDiv('divTerraza');">Terraza</a></li>
+                <li class="liBotton"><a title="Opcion 6" href="#" onclick="MostrarDiv('divArtesanos');">Somos Artesanos</a></li>
+                <li class="liBotton"><a title="Opcion 7" href="#" onclick="MostrarDiv('divContacto');">Contacto</a></li>
             </ul>             
 <!--            <img id="opcion1" class="imagenMenu" onclick="MostrarDiv('divContacto');" src="img/btn/boton_contacto1.fw.png" alt="Contacto" onMouseOver="cambiarOP1();" onMouseOut="volverOP1();">
             <img id="opcion2" onclick="MostrarDiv('divTerraza');" src="img/btn/boton_terraza1.fw.png" alt="Terraza" onMouseOver="cambiarOP2();" onMouseOut="volverOP2();">
@@ -85,7 +85,7 @@ and open the template in the editor.
             <img id="opcion6" onclick="MostrarDiv('divArtesanos');" src="img/btn/boton_artesanos1.fw.png" alt="Nuestros Artesanos" onMouseOver="cambiarOP6();" onMouseOut="volverOP6();">
             <img id="opcion7" onclick="MostrarDiv('Divsala');" src="img/btn/boton_sala1.fw.png" alt="Sala" onMouseOver="cambiarOP7();" onMouseOut="volverOP7();">-->
         </NAV>        
-        <article id="home" >            
+        <article id="divhome" >            
             <p style="padding-left:200px; padding-right: 200px;">Las mas finas y nobles maderas se convierten en las manos de nuetros habiles artesanos en muebles de una calidad inigualable, preservando las ancestrales tecnicas del trabajo en madera, Noble & Rustico tiene especial cuidado en entregar a sus slectos clientes los mas finamente terminados muebles.</p>
             <iframe src="slider_principal.html" style="width:900px;height:404px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;padding-top:50px;padding-bottom: 50px" marginheight="0" marginwidth="0"></iframe><Br/>
             <iframe src="slide_index_1.html" style="width:470px;height: 314px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto; padding-right: 30px;" marginheight="0" marginwidth="0"></iframe>
@@ -101,6 +101,37 @@ and open the template in the editor.
             El objetivo es crear ambientes cálidos, que nos inviten a quedarnos, un mueble para toda la vida, de carácter noble y diseño rustico.</p>
             <img alt="" src="img/separador.fw.png">
         </article>
+        <article id="divComedor" class="divZonas" style="display: none;">
+            <iframe src="slide_comedor.html" style="width:640px;height:364px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>                                    
+        </article>
+        <article id="divDormitorio" class="divZonas" style="display: none;">
+            <iframe src="slider_dormitorio.html" style="width:830px;height:364px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>
+        </article>
+        <article id="divSala" class="divZonas" style="display: none;">
+            <iframe src="slide_sala.html" style="width:800px;height:604px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>
+        </article>
+        <article id="divTerraza" class="divZonas" style="display: none;">
+            <p class="parrafo">Los diferentes ambientes de tu hogar serán realzados con muebles construidos en finas maderas, muchas de ellas recuperadas para darles una segunda vida en manos de carpinteros con años de experiencia</p>
+            <iframe src="slider_terraza.html" style="width:640px;height:364px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block; padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>
+        </article>
+        <article id="divArtesanos" class="divZonas" style="display: none;">
+            <iframe src="slider_artesanos.html" style="width:830px;height:364px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>
+        </article>
+        <article id="divContacto" class="divZonas" style="display: none;padding-bottom: 50px;">
+            <form id="formContacto" name="NContacto" action="#" >
+                <div style=" clear: both; display:block;">
+                    <input id="nombre" class="cuadroTexto" type="text" value="Nombre"> <br/>
+                </div>
+                <div style=" clear: both;">
+                    <input id="mail" class="cuadroTexto"  type="text" value="Mail"> <br/>
+                </div>
+                <div style=" clear: both;">
+                    <input id="mensaje" class="cuadroTexto" type="text" value="Mensaje"> <br/>
+                </div>
+                <input id="limpiar" type="submit" value="Limpiar">
+                <input id="Enviar" type="submit" value="Enviar">                        
+            </form>
+        </article>         
         <footer>
             <article>Visita nuestra Redes</article>            
             <article>

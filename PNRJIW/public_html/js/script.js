@@ -87,14 +87,12 @@ function cambiarOP2() {
 
 
 function MostrarDiv(NombreDiv){
-    document.getElementById('divIndice').style.display='none';
-    document.getElementById('divContacto').style.display='none';
-    document.getElementById('divTerraza').style.display='none';
-    document.getElementById('divCocina').style.display='none';
+    document.getElementById('divhome').style.display='none';
     document.getElementById('divComedor').style.display='none';
     document.getElementById('divDormitorio').style.display='none';
+    document.getElementById('divSala').style.display='none';
+    document.getElementById('divTerraza').style.display='none';
     document.getElementById('divArtesanos').style.display='none';
-    document.getElementById('Divsala').style.display='none';
-    document.getElementById(NombreDiv).style.display='block';
-    
+    document.getElementById('divContacto').style.display='none';    
+    document.getElementById(NombreDiv).style.display='block';    
 }

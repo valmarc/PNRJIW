@@ -11,19 +11,19 @@
 #divhome{
     padding-top: 40px;    
     text-align: center; 
-    background-color: #000000; 
-    color:#ccc;
+    background-color: #FFFFFF;  /*blanco */
+    color:#000000;  
     font-size: 14px;
     font-weight: bold;
 }
 
 footer{
-    border: 1px solid #ccc;
+    border: 1px none #ccc;
     text-align:center;
 	font-size:14px;	 
-        color:#ccc;
+        color:#000000;
 	/*background-color:#848484;*/
-        background-color: #000000;
+        background-color: #FFFFFF;
         padding-top: 40px;
         font-family:Century Gothic;    
 }
@@ -115,21 +115,21 @@ nav ul li a:hover {
         
 .rTable { display: table; width: 100%;} 
 .rTableRow { display: table-row; }
-.rTableHeading { background-color: #000000;
+.rTableHeading { background-color: #FFFFFF;
                 display: table-header-group; }
-.rTableCell, .rTableHead { display: table-cell; padding: 3px 10px; border: 1px solid #000000; }
+.rTableCell, .rTableHead { display: table-cell; padding: 3px 10px; border: 1px solid #FFFFFF; }
 .rTableHeading { display: table-header-group; 
-                background-color: #000000; font-weight: bold; }
+                background-color: #FFFFFF; font-weight: bold; }
 .rTableFoot { display: table-footer-group; font-weight: bold; 
-             background-color: #000000; }
+             background-color: #FFFFFF; }
 .rTableBody { display: table-row-group; }        
  
 
 .divZonas{
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding-top: 40px;    
     text-align: center; 
-    color:#ccc;
+    color:#000000;
     font-size: 14px;
     font-weight: bold;
 }

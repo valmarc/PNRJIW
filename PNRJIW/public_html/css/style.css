@@ -21,10 +21,11 @@ footer{
     border: 1px none #ccc;
     text-align:center;
 	font-size:14px;	 
-        color:#000000;
-	/*background-color:#848484;*/
-        background-color: #FFFFFF;
+        color:#FFFFFF;
+	/*background-color:#FFFFFF;*/
+        background-color: #000000;
         padding-top: 40px;
+        padding-bottom: 200px;
         font-family:Century Gothic;    
 }
 
@@ -115,13 +116,13 @@ nav ul li a:hover {
         
 .rTable { display: table; width: 100%;} 
 .rTableRow { display: table-row; }
-.rTableHeading { background-color: #FFFFFF;
+.rTableHeading { background-color: #000000;
                 display: table-header-group; }
-.rTableCell, .rTableHead { display: table-cell; padding: 3px 10px; border: 1px solid #FFFFFF; }
+.rTableCell, .rTableHead { display: table-cell; padding: 3px 10px; border: 1px solid #000000; }
 .rTableHeading { display: table-header-group; 
-                background-color: #FFFFFF; font-weight: bold; }
+                background-color: #000000; font-weight: bold; }
 .rTableFoot { display: table-footer-group; font-weight: bold; 
-             background-color: #FFFFFF; }
+             background-color: #000000; }
 .rTableBody { display: table-row-group; }        
  
 

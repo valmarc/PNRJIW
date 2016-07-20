@@ -92,7 +92,5 @@ function MostrarDiv(NombreDiv){
     document.getElementById('divDormitorio').style.display='none';
     document.getElementById('divSala').style.display='none';
     document.getElementById('divTerraza').style.display='none';
-    document.getElementById('divArtesanos').style.display='none';
-    document.getElementById('divContacto').style.display='none';    
     document.getElementById(NombreDiv).style.display='block';    
 }

@@ -20,17 +20,22 @@ and open the template in the editor.
         </style> 
         <script> 
             function setOp(obj, value) { 
-                obj.style.opacity = value/100; 
-                obj.style.MozOpacity = value/100; 
-                obj.style.KhtmlOpacity = value/100; 
+                //obj.style.opacity = value/100; 
+                //obj.style.MozOpacity = value/100; 
+                //obj.style.KhtmlOpacity = value/100; 
+                
+                obj.style.opacity = 100/value; 
+                obj.style.MozOpacity = 100/value; 
+                obj.style.KhtmlOpacity = 100/value; 
+                
                 obj.style.filter = 'alpha(opacity=' + value+ ')'; 
                 obj.style.zoom=1;//necesario para Explorer 
-                if (value==249){
+                if (value==449){
                        VisualizarTodo();  
                 }
              }  
             function efecto(o){ 
-                for (var c=0 ; c < 250; c++)  
+                for (var c=1 ; c < 450; c++)  
                     (function(c){ 
                          setTimeout(function(){setOp(o,c);} , 25*c); 
                          
@@ -44,7 +49,9 @@ and open the template in the editor.
                 document.getElementById('tabBannerPrincipal').style.display='block';
                 document.getElementById('divhome').style.display='block';
                 document.getElementById('im').style.padding='0 0 0 0';
-                
+                document.getElementById('im').style.opacity=1;
+                document.getElementById('im').style.MozOpacity=1;
+                document.getElementById('im').style.KhtmlOpacity=1;
             }
             
             window.onload = function () {
@@ -85,19 +92,27 @@ and open the template in the editor.
             </div>      
         </header>        
         <article id="divhome" style="display:none;" >            
-            <p style="padding-left:200px; padding-right: 200px;">Las mas finas y nobles maderas se convierten en las manos de nuetros habiles artesanos en muebles de una calidad inigualable, preservando las ancestrales tecnicas del trabajo en madera, Noble & Rustico tiene especial cuidado en entregar a sus slectos clientes los mas finamente terminados muebles.</p>
+            <p style="padding-left:200px; padding-right: 200px;text-align : justify">Las mas finas y nobles maderas se convierten en manos de nuetros hábiles artesanos, en muebles de una calidad inigualable, preservando las ancestrales tecnicas del trabajo en madera, Noble & Rustico tiene especial cuidado en entregar a sus selectos clientes, muebles con las mas finas terminaciones.
+			</p>
 <!--            <iframe src="slider_principal.html" style="width:900px;height:404px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;padding-top:50px;padding-bottom: 50px" marginheight="0" marginwidth="0"></iframe><Br/>-->
             <iframe src="slide_index_1.html" style="width:470px;height: 294px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto; padding-right: 30px;" marginheight="0" marginwidth="0"></iframe>
             <iframe src="slider_index_2.html" style="width:470px;height: 314px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;" marginheight="0" marginwidth="0"></iframe>            
             <P style="font-size:16px;font-weight: bold;padding-top:30px;">QUIENES SOMOS</p>
-            <p style="padding-top:20px;padding-left:200px; padding-right: 200px;">    En Noble & Rústico  somos especialistas  en  muebles  de estilo  , con diseños exclusivos y originales , especialmente desarrollados para satisfacer con excelencia las necesidades de nuestros clientes  más exigentes,  también ponemos  a su disposición, nuestra línea de muebles especiales , construidos de maderas recicladas y nobles .            
+            <p style="padding-top:20px;padding-left:200px; padding-right: 200px;text-align : justify">    En Noble & Rústico  somos especialistas  en  muebles  de estilo  , con diseños exclusivos y originales , especialmente desarrollados para satisfacer con excelencia las necesidades de nuestros clientes  más exigentes,  también ponemos  a su disposición, nuestra línea de muebles especiales , construidos de maderas recicladas y nobles .            
                 Nuestra serie de muebles de terraza, quitasoles, junto con arrimos, cavas y  toda clase de muebles  especiales de maderas recicladas, nos hace únicos, contamos con los mejores  artesanos  en madera, solo especialistas nos ayudan a ser los mejores.
                 Si necesitas amoblar tu oficina con estilo, para destacar la imagen de tu empresa frente a tus clientes, contamos con increíbles escritorios, bifes, mesas, sillas y sillones, que no encontraras en otro lugar, deja la imagen de tu negocio en nuestras manos, los muebles que usamos dicen mucho de las personas  y también de las empresas,  de ahí la importancia del mobiliario.
                 En  noble & Rústico podemos abordar tus proyectos especiales,  quieres amoblar  ese nuevo dormitorio, necesitas una nueva cama, un velador, quizás  construir  por fin,  ese hermoso quincho con el que sueñas,   tráenos ese tan especial proyecto y lo haremos realidad para ti.</p>
-            <img alt="" src="img/separador.fw.png">
+            <br> &nbsp;
+	        <br> &nbsp;
+	        <br> &nbsp;
+			
+			<img alt="" src="img/separador.fw.png">
             <P style="font-size:16px;font-weight: bold;padding:20px;">SOMOS ARTESANOS</p>
-            <p style=" padding-top: 20px;padding-left:200px; padding-right: 200px;">Noble&rustico  parte como una empresa dedicada al diseño de interior y exterior llamada Decoroma Ltda. (Actualmente representante legal), que se caracteriza por el rescate y restauración de piezas únicas, creada el año 1991. más tarde con el afán de innovar y fusionar los conocimientos adquiridos en Europa se crea noble&rustico donde ahora los muebles son los protagonistas .Estos son muebles  para exterior e interior fabricados en maderas nativas chilenas, con énfasis en los materiales sustentables y con un fuerte criterio ecológico, se utiliza sobre todo el roble sacado de demoliciones, dejando a la vista todas sus marcas de clavos, vetas, etc. que le dan aun mayor riqueza al mueble y que le da un carácter de único. Además se trabaja con lenga, raulí, alerce, pino Oregón y otras, además  piedras y mármol para los insertos de estos diseños
+            <p style=" padding-top: 20px;padding-left:200px; padding-right: 200px;text-align : justify">Noble & rústico  parte como una empresa dedicada al diseño de interior y exterior llamada Decoroma Ltda. (Actualmente representante legal), que se caracteriza por el rescate y restauración de piezas únicas, creada el año 1991. más tarde con el afán de innovar y fusionar los conocimientos adquiridos en Europa se crea noble&rustico donde ahora los muebles son los protagonistas .Estos son muebles  para exterior e interior fabricados en maderas nativas chilenas, con énfasis en los materiales sustentables y con un fuerte criterio ecológico, se utiliza sobre todo el roble sacado de demoliciones, dejando a la vista todas sus marcas de clavos, vetas, etc. que le dan aun mayor riqueza al mueble y que le da un carácter de único. Además se trabaja con lenga, raulí, alerce, pino Oregón y otras, además  piedras y mármol para los insertos de estos diseños
             El objetivo es crear ambientes cálidos, que nos inviten a quedarnos, un mueble para toda la vida, de carácter noble y diseño rustico.</p>
+			<br> &nbsp;
+	        <br> &nbsp;
+	        <br> &nbsp;
             <img alt="" src="img/separador.fw.png">
         </article>
         <article id="divComedor" class="divZonas" style="display: none;">
@@ -116,16 +131,20 @@ and open the template in the editor.
 <!--        <article id="divArtesanos" class="divZonas" style="display: none;">
             <iframe src="slider_artesanos.html" style="width:830px;height:414px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>
         </article>        -->
+		
+		<br> &nbsp;
+	        <br> &nbsp;
+	        <br> &nbsp;
         <footer id="pie" style="display: none;">
             <article>Visita nuestra Redes</article>            
             <article>
                 <div class="rTable">
                     <div class="rTableHeading">
                         <div class="rTableRow">
-                            <div class="rTableCell" style=" width:33%;">Encuentranos en Avenida OSSA #1704 Fono:222273682</div>
+                            <div class="rTableCell" style=" width:33%;">Encuentranos, en Avenida OSSA #1704   &nbsp;&nbsp;&nbsp;&nbsp; Fono:&nbsp; 222273682</div>
                             <div class="rTableCell" style=" width:33%;">                                
                                 <img src="img/social/pinterest.fw.png" alt="Pinterest">
-                                <a title="Twitter" href="https://twitter.com/marcovalenchile">
+                                <a title="Twitter" href="https://twitter.com/NobleRustico">
                                     <img src="img/social/twitter.fw.png" alt="Twitter">
                                 </a>
                                 <a title="Facebook" href="https://www.facebook.com/NobleRustico-242414232459912/">

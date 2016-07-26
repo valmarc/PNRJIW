@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-jul-2016, 1:03:03
+    Author     : Valmarc
+*/
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#main{
+    background-color: #FFFFFF;
+}
+
+#divLogo{
+ text-align: center;
+}
+
+#divIndice{
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#piePagina {
+	text-align:center;
+	font-size:14px;	 
+        color:#ccc;
+	background-color:#848484;	 
+	margin-top:15px;	
+        font-family:Century Gothic;             
+	}
+        
+        #iframesilla{
+            overflow:hidden;
+            width:250px;
+            height:430px;
+            max-width:100%;
+            border:none;
+            padding:0;
+            margin:0 auto;
+            display:block;
+        }
+        
+        #formContacto{
+            margin-left:90px;
+            border: medium none;
+            font-size: 13px;
+            padding: 14px 18px;
+            border-radius: 20px;
+            color: #333333;
+            font-family: "ArimoRegular";
+        }
+        .cuadroTexto{            
+            background-color: #eeeeee;
+            border: medium none;
+            box-shadow: 0 0 0 #aaaaaa inset, 2px 2px 1px #aaaaaa;
+            transition: all 0.3s linear 0s;
+           
+        }      

@@ -1,0 +1,229 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+/*Fuentes */
+@font-face {
+    font-family: Century Gothic;
+    src: url(ufonts.com_century-gothic.ttf);
+}
+
+#divhome{
+    padding-top: 40px;    
+    text-align: center; 
+    background-color: #FFFFFF;  /*blanco */
+    color:#000000;  
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer{
+    border: 1px none #ccc;
+    text-align:center;
+	font-size:14px;	 
+        color:#FFFFFF;
+	/*background-color:#FFFFFF;*/
+        background-color: #000000;
+        padding-top: 40px;
+        padding-bottom: 200px;
+        font-family:Century Gothic;    
+}
+
+nav{
+    /*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:10px;/*El estandar por defecto*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    overflow:hidden;
+    padding:10px;   
+  /*  width:725px;*/
+    
+}
+
+nav ul{
+    list-style:none;
+    margin:0 10px 0 10px;
+    padding:0;    
+}
+
+nav ul li{
+    /*Bordes redondeados*/
+    -webkit-border-radius:5px;/*Chrome y Safari*/
+    -moz-border-radius:5px;/*Firefox*/
+    -o-border-radius:5px;/*Opera*/
+    border-radius:5px;/*Estandar por defecto*/
+    float:left;
+    font-family: Century Gothic;
+    font-size:14px;
+    font-weight:bold;
+    margin-right:10px;
+    text-align:center;
+    /*Sombras para texto, los mismos parametros que box-shadow*/
+    text-shadow: 0px 1px 0px #FFF;
+}
+
+nav ul li:hover{
+    /*Degradado de fondo*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to( #E3E3E3));/*Chrome y Safari*/
+    background-image: -moz-linear-gradient(top center, #FFF, #E3E3E3);/*Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #E3E3E3);/*Opera*/
+    background-image: linear-gradient(top, #FFF, #E3E3E3);/*Estandar por defecto*/
+    /*Sombras*/
+    -webkit-box-shadow:  1px -1px 0px #999;/*Chrome y Safari*/
+    -moz-box-shadow:  1px -1px 0px #999;/*Firefox*/
+    -o-box-shadow:  1px -1px 0px #999;/*Opera*/
+    box-shadow:  1px -1px 0px #999;/*Estandar por defecto*/
+    border:1px solid #E3E3E3;    
+}
+
+nav ul li a{
+    color:#999;
+    display:block;
+    padding:5px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+}
+
+nav ul li a:hover {
+    color:#000;
+}
+
+ .ulBoton{
+            float: left;
+            list-style-type: none;
+            padding: 0; 
+            /* AÑADIMOS */
+            position: relative; 
+            left: 50%;
+        }
+ .liBotton{
+            float: left;
+            /* AÑADIMOS */
+            position: relative; 
+            right: 50%;
+        }
+
+        
+.rTable { display: table; width: 100%;} 
+.rTableRow { display: table-row; }
+.rTableHeading { background-color: #000000;
+                display: table-header-group; }
+.rTableCell, .rTableHead { display: table-cell; padding: 3px 10px; border: 1px solid #000000; }
+.rTableHeading { display: table-header-group; 
+                background-color: #000000; font-weight: bold; }
+.rTableFoot { display: table-footer-group; font-weight: bold; 
+             background-color: #000000; }
+.rTableBody { display: table-row-group; }        
+ 
+
+.divZonas{
+    background-color: #FFFFFF;
+    padding-top: 40px;    
+    text-align: center; 
+    color:#000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.parrafo{
+     padding-top: 20px;
+     padding-left:200px; 
+     padding-right: 200px;
+}
+/*Clases
+.MensajeEmergente{
+    display:none;
+}
+
+/*Etiquetas Individuales
+#main {
+    background-image: url(../img/fondo/fondo_madera3.jpg);
+    /*background-color: #FFFAFA;
+    position: static;
+}
+
+#tabCabecera{
+    background-color: #848484;
+    width: 100%;    
+    font-family: Century Gothic;
+}
+
+.divBarra{
+    background-image: url(../img/fondo/linea.fw.png);
+    color:#848484;
+    height: 50px;          
+}
+
+
+#CentroTabla{            
+            padding-left: 25px;
+            background-color: #848484;
+        }    
+        
+#menu {
+	text-align:center;        
+	}
+        
+#tabmenu{
+            margin: auto;
+	margin-left:100px;
+        }        
+#cuerpo{
+      margin: auto;
+      margin-top:15px;     
+	}
+  
+#div_banner{
+        background-image: url(../imagen/comedor/barracomedor.jpg);            
+        margin-top:50px;
+        height: 150px;
+        }
+
+#banner{        
+        font-size:50px;
+        color:#FFFAFA;        
+        margin-left: 400px;
+        margin-top:150px;
+        font-family: Century Gothic;
+        }
+
+#piePagina {
+	text-align:center;
+	font-size:14px;	 
+        color:#ccc;
+	background-color:#848484;	 
+	margin-top:15px;	
+        font-family:Century Gothic;             
+	}
+
+.tdCabecera{
+            font-weight:bold;
+            font-size:16px;	 
+        }
+
+.mensaje{ 
+ margin-left:98px;
+ margin-right: 470px;
+ margin-top:40px;
+ margin-bottom: 40px;
+/* background-color: white;
+ font-family: Century Gothic;
+ font-size:12px;	 
+ background-image: url(../img/fondo/globo.fw.png);
+}
+
+.parTitulo{
+    	font-size:22px;	 
+        font-weight:bold;
+        text-align: center;       
+} */

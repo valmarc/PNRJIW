@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Noble & Rustico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>        
+        <style> 
+            *{margin:0} 
+            body{ background-color:#FFFFFF;margin:10px 2px} 
+            #im{-khtml-opacity:0; -moz-opacity:0; filter:alpha(opacity=0); opacity:0;zoom:1; margin-top:2px} 
+            input{ background-color:#CCC; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#F00; border:1px solid #000} 
+        </style> 
+        <script> 
+            function setOp(obj, value) { 
+                obj.style.opacity = value/100; 
+                obj.style.MozOpacity = value/100; 
+                obj.style.KhtmlOpacity = value/100; 
+                obj.style.filter = 'alpha(opacity=' + value+ ')'; 
+                obj.style.zoom=1;//necesario para Explorer 
+                if (value==249){
+                       VisualizarTodo();  
+                }
+             }  
+            function efecto(o){ 
+                for (var c=0 ; c < 250; c++)  
+                    (function(c){ 
+                         setTimeout(function(){setOp(o,c);} , 25*c); 
+                         
+                    })(c);                 
+            }
+
+            function VisualizarTodo(){
+                document.getElementById('im').src='img/logo.png';        
+                document.getElementById('pie').style.display='block';
+                document.getElementById('tagNav').style.display='block';
+                document.getElementById('tabBannerPrincipal').style.display='block';
+                document.getElementById('divhome').style.display='block';
+                document.getElementById('im').style.padding='0 0 0 0';
+                
+            }
+            
+            window.onload = function () {
+                efecto(document.getElementById('im')); 
+          //      var timeoutId = setTimeout(VisualizarTodo(),60000);
+            }
+
+
+        </script>   
+    </head>
+    <body>
+        <header>
+            <div class="container">                
+                <div class="row" >
+                    <div class="col-lg-12 col-md-8 col-sm-4 col-xs-3"  style="background-color:#FFFFFF;padding-top:10px;padding-bottom: 15px;">
+<!--                       <img style="padding-top: 200px;" id="im" src="img/logo.png" class="espacio-imagen center-block" alt="">-->
+<!--                       <img style="padding-top: 200px;" id="im" src="img/logocentral.fw.png" class="espacio-imagen center-block" alt="">-->
+                        <img style="padding-top: 100px;" id="im" src="img/logocentral.fw2.fw.png" class="espacio-imagen center-block" alt="">                       
+                    </div>                  
+                </div>
+             </div>   
+            <NAV id="tagNav"  style="display:none;" >
+                <div class="container">
+                    <ul class="ulBoton" >
+                        <li class="liBotton"><a title="Inicio" href="#" onclick="MostrarDiv('divhome');">Inicio</a></li>
+                        <li class="liBotton"><a title="Comedores" href="#" onclick="MostrarDiv('divComedor');">Comedor</a></li>
+                        <li class="liBotton"><a title="Dormitorios" href="#" onclick="MostrarDiv('divDormitorio');">Dormitorio</a></li>
+                        <li class="liBotton"><a title="Salas" href="#" onclick="MostrarDiv('divSala');">Sala</a></li>
+                        <li class="liBotton"><a title="Terrazas" href="#" onclick="MostrarDiv('divTerraza');">Terraza</a></li>
+<!--                        <li class="liBotton"><a title="Opcion 6" href="#" onclick="MostrarDiv('divArtesanos');">Somos Artesanos</a></li>-->
+                        <li class="liBotton"><a title="Contacto" href="http://www.nobleyrustico.cl/Tienda/contacto/" >Contacto</a></li>
+                        <li class="liBotton"><a title="Tienda" href="http://www.nobleyrustico.cl/Tienda/" >Tienda</a></li>
+                    </ul>                         
+                </div>
+            </NAV>        
+            <div id="tabBannerPrincipal" class="container" style="display: none;">
+                  <iframe src="banner_principal.html" style="width:1800px;height:477px;max-width:100%;overflow:hidden;border:none;padding-top:15px;padding-bottom: 15px;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+            </div>      
+        </header>        
+        <article id="divhome" style="display:none;" >            
+            <p style="padding-left:200px; padding-right: 200px;text-align : justify">Las mas finas y nobles maderas se convierten en manos de nuetros hábiles artesanos, en muebles de una calidad inigualable, preservando las ancestrales tecnicas del trabajo en madera, Noble & Rustico tiene especial cuidado en entregar a sus selectos clientes, muebles con las mas finas terminaciones.
+			</p>
+<!--            <iframe src="slider_principal.html" style="width:900px;height:404px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;padding-top:50px;padding-bottom: 50px" marginheight="0" marginwidth="0"></iframe><Br/>-->
+            <iframe src="slide_index_1.html" style="width:470px;height: 294px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto; padding-right: 30px;" marginheight="0" marginwidth="0"></iframe>
+            <iframe src="slider_index_2.html" style="width:470px;height: 314px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;" marginheight="0" marginwidth="0"></iframe>            
+            <P style="font-size:16px;font-weight: bold;padding-top:30px;">QUIENES SOMOS</p>
+            <p style="padding-top:20px;padding-left:200px; padding-right: 200px;text-align : justify">    En Noble & Rústico  somos especialistas  en  muebles  de estilo  , con diseños exclusivos y originales , especialmente desarrollados para satisfacer con excelencia las necesidades de nuestros clientes  más exigentes,  también ponemos  a su disposición, nuestra línea de muebles especiales , construidos de maderas recicladas y nobles .            
+                Nuestra serie de muebles de terraza, quitasoles, junto con arrimos, cavas y  toda clase de muebles  especiales de maderas recicladas, nos hace únicos, contamos con los mejores  artesanos  en madera, solo especialistas nos ayudan a ser los mejores.
+                Si necesitas amoblar tu oficina con estilo, para destacar la imagen de tu empresa frente a tus clientes, contamos con increíbles escritorios, bifes, mesas, sillas y sillones, que no encontraras en otro lugar, deja la imagen de tu negocio en nuestras manos, los muebles que usamos dicen mucho de las personas  y también de las empresas,  de ahí la importancia del mobiliario.
+                En  noble & Rústico podemos abordar tus proyectos especiales,  quieres amoblar  ese nuevo dormitorio, necesitas una nueva cama, un velador, quizás  construir  por fin,  ese hermoso quincho con el que sueñas,   tráenos ese tan especial proyecto y lo haremos realidad para ti.</p>
+            <br> &nbsp;
+	        <br> &nbsp;
+	        <br> &nbsp;
+			
+			<img alt="" src="img/separador.fw.png">
+            <P style="font-size:16px;font-weight: bold;padding:20px;">SOMOS ARTESANOS</p>
+            <p style=" padding-top: 20px;padding-left:200px; padding-right: 200px;text-align : justify">Noble & rústico  parte como una empresa dedicada al diseño de interior y exterior llamada Decoroma Ltda. (Actualmente representante legal), que se caracteriza por el rescate y restauración de piezas únicas, creada el año 1991. más tarde con el afán de innovar y fusionar los conocimientos adquiridos en Europa se crea noble&rustico donde ahora los muebles son los protagonistas .Estos son muebles  para exterior e interior fabricados en maderas nativas chilenas, con énfasis en los materiales sustentables y con un fuerte criterio ecológico, se utiliza sobre todo el roble sacado de demoliciones, dejando a la vista todas sus marcas de clavos, vetas, etc. que le dan aun mayor riqueza al mueble y que le da un carácter de único. Además se trabaja con lenga, raulí, alerce, pino Oregón y otras, además  piedras y mármol para los insertos de estos diseños
+            El objetivo es crear ambientes cálidos, que nos inviten a quedarnos, un mueble para toda la vida, de carácter noble y diseño rustico.</p>
+			<br> &nbsp;
+	        <br> &nbsp;
+	        <br> &nbsp;
+            <img alt="" src="img/separador.fw.png">
+        </article>
+        <article id="divComedor" class="divZonas" style="display: none;">
+            <iframe src="slide_comedor.html" style="width:640px;height:414px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>                                    
+        </article>
+        <article id="divDormitorio" class="divZonas" style="display: none;">
+            <iframe src="slider_dormitorio.html" style="width:830px;height:414px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>
+        </article>
+        <article id="divSala" class="divZonas" style="display: none;">
+            <iframe src="slide_sala.html" style="width:800px;height:654px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>
+        </article>
+        <article id="divTerraza" class="divZonas" style="display: none;">
+            <p class="parrafo">Los diferentes ambientes de tu hogar serán realzados con muebles construidos en finas maderas, muchas de ellas recuperadas para darles una segunda vida en manos de carpinteros con años de experiencia</p>
+            <iframe src="slider_terraza.html" style="width:640px;height:414px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block; padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>            
+        </article>
+<!--        <article id="divArtesanos" class="divZonas" style="display: none;">
+            <iframe src="slider_artesanos.html" style="width:830px;height:414px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;padding-bottom: 50px;" marginheight="0" marginwidth="0"></iframe>
+        </article>        -->
+		
+		<br> &nbsp;
+	        <br> &nbsp;
+	        <br> &nbsp;
+        <footer id="pie" style="display: none;">
+            <article>Visita nuestra Redes</article>            
+            <article>
+                <div class="rTable">
+                    <div class="rTableHeading">
+                        <div class="rTableRow">
+                            <div class="rTableCell" style=" width:33%;">Encuentranos, en Avenida OSSA #1704   &nbsp;&nbsp;&nbsp;&nbsp; Fono:&nbsp; 222273682</div>
+                            <div class="rTableCell" style=" width:33%;">                                
+                                <img src="img/social/pinterest.fw.png" alt="Pinterest">
+                                <a title="Twitter" href="https://twitter.com/NobleRustico">
+                                    <img src="img/social/twitter.fw.png" alt="Twitter">
+                                </a>
+                                <a title="Facebook" href="https://www.facebook.com/NobleRustico-242414232459912/">
+                                    <img src="img/social/face.fw.png" alt="Facebook">
+                                </a>
+                                <a title="Instagram" href="https://www.instagram.com/noblerustico/">
+                                    <img src="img/social/insta.fw.png" alt="Instagram"></div>
+                                </a>
+                                <div class="rTableCell" style=" width:33%;">
+                                    <span>Quienes Somos</span><br/>
+                                    <span>Somos Artesanos</span><br/>
+                                    <span>Contactenos</span>   
+                                </div>
+                        </div>
+                    </div></div>
+            </article>
+            <article>
+                Noble y Rustico, donde el Arte y el Estilo se Unen.
+            </article>
+<!--            <table width=100%>
+                    <tr>
+                        <td width=15%></td>
+                        <td width=25% class="tdCabecera">INFORMACION</td>
+                        <td width=25% class="tdCabecera">SERVICIO AL CLIENTE</td>
+                        <td width=25%></td>
+                    </tr>
+                    <tr>
+                        <td width=15%></td>
+                        <td width=25%>Nosotros</td>
+                        <td width=25%>Contactenos</td>
+                        <td width=25%></td>
+                    </tr>
+                    <tr>
+                        <td width=15%></td>
+                        <td width=25%>Informacion de Envio</td>
+                        <td width=25%>Devoluciones</td>
+                        <td width=25%></td>
+                    </tr>
+                    <tr>
+                        <td width=15%></td>
+                        <td width=25%>Politicas de Privacidad</td>
+                        <td width=25%>Mapa del Sitio</td>
+                        <td width=25%></td>
+                    </tr>
+                    <tr>
+                        <td width=15%></td>
+                        <td width=25%>Terminos y Condiciones</td>
+                        <td width=25%></td>
+                        <td width=25%></td>
+                    </tr>
+                </table>-->
+        </footer>
+    </body>
+</html>
